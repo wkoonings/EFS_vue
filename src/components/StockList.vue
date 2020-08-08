@@ -148,7 +148,7 @@
                 apiService.deleteStock(stock.pk).then(response => {
                     if (response.status === 204) {
                         this.showMsg = 'deleted';
-                        router.push('/stock-list/delete')
+                        router.push('/stock-list/deleted')
                     }
                 }).catch(error => {
                     if (error.response.status === 401) {
