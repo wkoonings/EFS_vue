@@ -150,7 +150,7 @@
                 apiService.deleteInvestment(investment.pk).then(response => {
                     if (response.status === 204) {
                         this.showMsg = 'deleted';
-                        router.push('/investment-list/delete')
+                        router.push('/investment-list/deleted')
                     }
                 }).catch(error => {
                     if (error.response.status === 401) {
